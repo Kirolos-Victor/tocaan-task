@@ -14,13 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/task1', function () {
-    return view('task1');
-});
-Route::get('/task2', function () {
-    return view('task2');
-});
-Route::post('task',[TaskController::class,'task'])->name('task');
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+//Route::get('/task1', function () {
+//    return view('task1');
+//});
+//Route::get('/task2', function () {
+//    return view('task2');
+//});
+//Route::post('task',[TaskController::class,'task'])->name('task');
+Route::get('/',[TaskController::class,'usage']);
